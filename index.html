@@ -13,10 +13,14 @@
             background: #ecf2f9;*/
             }
         header{
-                background-image: url("header4.png");
-            }
-        header>h2, header>h4 {
+            background-color: #537796eb;
+/*                background-image: url("header2.png");
+*/            }
+        header>h2 {
             color: white;
+        }
+        header>h4{
+            color: yellow;
         }
         #navcenterid {
             text-align: center;
@@ -46,6 +50,11 @@
           p.big{
             font-size: 1.1em;
             
+          }
+          footer{
+            margin-top: 50px;
+            height: 100px;
+            background-color: #537796eb;
           }
     </style>
 <title>Title of the document</title>
@@ -84,10 +93,9 @@
           Personal Security
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#datasec">Mobile Security</a>
-          <a class="dropdown-item" href="#">Password Security</a>
+          <a class="dropdown-item" href="#mobsec">Mobile Security</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Safe Travels!</a>
+          <a class="dropdown-item" href="#travelsec">Safe Travels!</a>
         </div>
       </li>
     </ul>
@@ -96,7 +104,7 @@
   </nav>
 <br/>
 <div class="container-fluid" >
-    
+    <h4>Security Awareness</h4>
     <p class="big">
         Data is an asset and securing it is everyone's job. It is important to know how to protect data and information
     in times of threat and how to identify vulnerabilities in the system. Regardless of their role, every employee in an organization
@@ -150,40 +158,94 @@
 <br/>
     <div class="container-fluid" id="phish">
         <h4>Report Phishing</h4>
-       
-        <br/>
-        <p>Phishing is a malicious attempt to obtain your passwords, credentials and other secure information.
+        <p class="big">Phishing is a malicious attempt to obtain your passwords, credentials and other secure information.
         This is mostly done through emails. Beware of:
         </p>
         <ul>
+            <li>Emails from unknown people with attachments.</li>
+            <li>Emails claiming to come from IT requesting password and usernames but the actual person is not related IT.</li>
+            <li>Emails from known senders asking for personal information or claiming to have won $$$ with an attachment asking you to open it.</li>
             <li>Free offers and coupons from unknown emails.</li>
             <li>Tax refund checks - IRS never asks for personal information over email.</li>
             <li>Exclusive access to pre-release versions of software or games.</li>
-            <li>Emails from unknown people with attachments.</li>
-            <li>Emails claiming to come from IT requesting password and usernames but the actual person is not related IT.</li>
+            
         </ul>
         
         In all of the above mentioned events, please report to IT helpdesk about the sender
         and if possible, attach a screenshot of the email itself. Do not ever open an the attachment from suspicious emails.
-        
+        <br/><br/>
+        There is another form of phishing called <strong>Vishing</strong>, which is gaining access to personal information
+        by prying on vulnerable people through voice calls. Classic examples are someone claiming to call from your Bank and asking for
+        SSN and account numbers, other one would be claiming to call from IRS, asking you to pay $$$$ immediately
+        towards taxes or the money you owe. Please refrain from answering unknown calls. If it's important, they will leave
+        you a voicemail for you to get back.
     </div>
+    
+    <br/><br/>
+    <div class="container-fluid" id="pers">
+        <h4>Personal Security</h4>
+        <p class="big">Be a good digital neighbor. Things we do online create an impact offline.
+        All it takes to create a better digi-world is this:</p>
+        <ul>
+            <li>Own your online activity by keeping a tab on privacy settings
+                and limit what's being shared to public.</li>
+            <li>If you don't do things in real life, do not do it in your online life.
+                Do not go poking or bullying other people online just as you won't in your day-to-day life.</li>
+            <li>Do not send an email in anger or resentment. Posts can mean more than words since they have no
+                audio prompts as in speaking.</li>
+            <li>Treat your data as cash, do not reveal your data to anyone like how you wouldn't
+                let others know how much $$$ you own.</li>
+            <li>Protect your online presence with complex passwords and use two-step authentication whenever possible.
+                The more the layers of security, the safer you are.    
+            </li>
+            <li>Do not share home wifi passwords with visitors. If you have already done so, please reset
+                passwords frequently.</li>
+        </ul>
+        <br>
+        <div class="row">
+            <div id="mobsec" class="col-sm-10">
+                <h5>Mobile Security:</h5>
+                <p>Mobile devices are everywhere and data loss via mobiles is increasing. It is important to
+                use layers of protection to safeguard against malicious softwares. What can you do?</p>
+                <ul>
+                    <li>Use biometric authentication and or patterned passwords on mobile devices.</li>
+                    <li>Do not share the same passwords across all devices, use unique passwords whenever possible.</li>
+                    <li>Disable bluetooth and GPS in public places, do not connect to free wifi hotspots.</li>
+                    <li>Delete apps that are no longer needed. Disable access to photos and GPS
+                        to apps if not necessary.</li>
+                    <li>Share Cloud data cautiously. Are you sharing personal information to public?</li>
+                    <li>Mobile devices are like cash thanks to apple pay, samsung pay. Do not lose them!</li>
+                </ul>
+                
+            </div>
+            <div class="col-sm-2">
+                <br/><br/>
+                <img src="mob.png" alt="MOBILE">
+            </div>
+            <div id="travelsec">
+                <h5>Travel Security:</h5>
+                <p>Don't let data take a vacation with you! Protect yourself and your data while you're away with
+                these simple steps:</p>
+                <ul>
+                    <li>Activate device finder and keep your location services ON.</li>
+                    <li>Do not post travel plans to social media. Restrict to immediately family only.</li>
+                    <li>Do not take work devices with you on international
+                        trips unless it is essential since TSA has authority
+                        to confiscate devices and ask for credentials to login.</li>
+                    <li>Do not use public cafe's or hotel's computers to login to email,
+                        this increases the risk of account compromise.</li>
+                    <li>Wait until you get back to share trip details. This will
+                        make you lesser of a target by thieves.</li>
+                    <li>Keep your devices with you all the time, they are safe with you than in the hotel room or lockers.</li>
+                    <li>Change all your device passwords upon return.
+                        It will lower your chances of identity theft and device compromise.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <footer>
+        
+    </footer>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
