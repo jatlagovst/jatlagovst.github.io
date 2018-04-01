@@ -7,59 +7,183 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
+        body{
+            font-family: verdana;
+           /* background-repeat: no-repeat;
+            background: #ecf2f9;*/
+            }
+        header{
+                background-image: url("header4.png");
+            }
+        header>h2, header>h4 {
+            color: white;
+        }
         #navcenterid {
             text-align: center;
         }
+        .navbar-nav > li{
+            padding-left:30px;
+            padding-right:30px;
+          }
+          .navbar-nav > li{
+            margin-left:30px;
+            margin-right:30px;
+          }
+          .nav-item {
+            background-color: #537796eb;
+            border-radius: 10px;
+          }
+          .navbar-light .navbar-nav .nav-link {
+            color: white;
+          }
+          .mr-auto, .mx-auto {
+            margin-right: auto;
+            margin-left: auto;
+          }
+          .container-fluid{
+            width: 90%;
+          }
+          p.big{
+            font-size: 1.1em;
+            
+          }
     </style>
 <title>Title of the document</title>
 </head>
 
 <body>
     <center>
-        <br/>
+        <header><br/>
         <h2>Governors State University</h2>
         <br/>
         <h4>Security Program Education</h4>
         <br/>
+        </header>
+        
     </center>
+    <br>
 <nav id="navcenterid" class="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="#"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+   Main Menu &nbsp;<span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
+      <li class="nav-item">
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">Security Awareness</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#phish">Report Phishing</a>
+      </li>
+      
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Personal Security
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#datasec">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#datasec">Mobile Security</a>
+          <a class="dropdown-item" href="#">Password Security</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#">Safe Travels!</a>
         </div>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    
   </div>
   </nav>
-<div>
-   
-
+<br/>
+<div class="container-fluid" >
+    
+    <p class="big">
+        Data is an asset and securing it is everyone's job. It is important to know how to protect data and information
+    in times of threat and how to identify vulnerabilities in the system. Regardless of their role, every employee in an organization
+    must know the general security guidelines and adapt them. Here's what you can do to secure data:
+    </p>
+    <div class="row">
+        <div class="col-sm-10">
+        <ul>
+            <li>Update your password every 90 days and use combination of letters and numbers.</li>
+            <li>Use secure platforms for file transfers.</li>
+            <li>Use discretion when typing in passwords if you're not alone.</li>
+            <li>Store confidential data and files in secure storage and on authorized cloud platforms only.</li>
+            <li>Check access levels on a monthly basis to eliminate threats posed by unwanted access.</li>
+            <li>Use caution when opening attachments and do not open if the sender is from unknown origin.</li>
+            <li>Use different credentials for banking, social media and work accounts.</li>
+            <li>Use only authentic vendor sites and servers to download software or files.</li>
+            <li>Always update your computer and laptop to the latest version of the software
+                release and apply patches whereever necessary as new versions eliminate
+                known vulnerabilities.</li>
+        </ul>
+        </div>
+        <div class="col-sm-2">
+            <img src="dos.png" alt="DO's"/>
+        </div>
+    </div>
+    <p class="big">
+        While it seems basic and mostly common sense, these small mistakes can cost a fortune to the business. Please don't:
+    </p>
+    <div class="row">
+        <div class="col-sm-2">
+            <img src="donts.png" alt="DONT'S">
+        </div>
+        <div class="col-sm-10">
+            <ul>
+                <li>Respond to emails and attachments from unknown sources. If you have opened an unwanted attachment,
+                    please inform IT immediately so they analyze the risk.</li>
+                <li>Give away confidential passwords and login details to anyone, remember
+                    that IT never requests you to send passwords for verification.</li>
+                <li>Use public computers for office purpose.
+                    Restrict to using only a secure machine provided by the employer.</li>
+                <li>Leave sensitive data on your desk,  shred the printouts after use.</li>
+                <li>Leave your computer unlocked, lock them down even if it is just for a quick restroom break.</li>
+                <li>Install applications from unknown sources, report them to IT if you really
+                    need an application and they will help you install the safest version.</li>
+                <li>Plug-in personal devices without IT authorization.</li>
+            </ul>
+        </div>
+    </div>
 </div>
-    <div class="container-fluid" id="datasec">
-        this is datasec!
+<br/>
+<br/>
+    <div class="container-fluid" id="phish">
+        <h4>Report Phishing</h4>
+       
+        <br/>
+        <p>Phishing is a malicious attempt to obtain your passwords, credentials and other secure information.
+        This is mostly done through emails. Beware of:
+        </p>
+        <ul>
+            <li>Free offers and coupons from unknown emails.</li>
+            <li>Tax refund checks - IRS never asks for personal information over email.</li>
+            <li>Exclusive access to pre-release versions of software or games.</li>
+            <li>Emails from unknown people with attachments.</li>
+            <li>Emails claiming to come from IT requesting password and usernames but the actual person is not related IT.</li>
+        </ul>
+        
+        In all of the above mentioned events, please report to IT helpdesk about the sender
+        and if possible, attach a screenshot of the email itself. Do not ever open an the attachment from suspicious emails.
+        
     </div>
 </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
